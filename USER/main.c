@@ -8,7 +8,7 @@
 int main(void)
 {
 	systick_config();
-	usart1_config(115200);
+	uart_config(115200);
 	
 	while(1)
 	{
