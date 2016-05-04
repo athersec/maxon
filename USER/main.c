@@ -4,14 +4,20 @@
 
 #include "clock.h"
 #include "usart.h"
+#include "cmd.h"
+#include "maxon.h"
 
 int main(void)
 {
 	systick_config();
 	uart_config(115200);
+	uart1_config(9600);
+	cmd_init();
+	maxon_config();
 	
 	while(1)
 	{
+
 	}
 	
 	return 0;
